@@ -1,0 +1,197 @@
+/* Styles de la navigation */
+.navbar {
+    background-color: #ff4500; /* Couleur vive pour la barre de navigation */
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.airjordan{color: #000;}
+.nav-link {
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+.airjordan {color: #ff4500;}
+
+.nav-link:hover {
+    color: #ffdd57; /* Couleur jaune vif au survol */
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff;
+}
+
+/* Carousel */
+.carousel-item img {
+    filter: brightness(0.85); /* Ajuste la luminosité des images */
+    transition: filter 0.5s ease-in-out;
+}
+
+.carousel-item img:hover {
+    filter: brightness(1); /* Les images s'illuminent au survol */
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #a5870d; /* Couleur vive pour le titre des chaussures */
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+/* Boutons du carousel */
+.carousel-caption .btn {
+    background-color: #ff4500;
+    color: #ffffff;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.carousel-caption .btn:hover {
+    background-color: #ffdd57; /* Jaune vif au survol */
+    color: #000;
+}
+
+/* Contrôles du carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+/* Témoignages */
+.testimonials {
+    background-color: #f4f4f4;
+    padding: 50px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.testimonials:hover {
+    background-color: #ffdd57; /* Jaune vif pour dynamiser la section au survol */
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    color: #ff4500; /* Titre coloré */
+    margin-bottom: 30px;
+}
+
+.testimonials p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #333333;
+}
+
+/* Footer */
+.footer-content {
+    background-color: #333;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content a {
+    color: #ffdd57;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-content a:hover {
+    color: #ff4500; /* Orange vif au survol */
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.social-icons a {
+    color: #ffdd57; /* Couleur vive pour les icônes */
+    font-size: 1.8rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.3); /* Les icônes grandissent au survol */
+    color: #ffffff;
+}
+
+/* Transitions globales pour une animation douce */
+body, .navbar, .carousel, .testimonials, .footer-content {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Section de commentaires */
+.comments-section {
+    background-color: #f1f1f1;
+    padding: 40px;
+    margin-top: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comments-section h2 {
+    font-size: 2rem;
+    color: #ff6347; /* Couleur du titre */
+    margin-bottom: 20px;
+}
+
+.comment-form {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #ff6347;
+}
+
+.btn-primary {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #ff4500;
+}
+
+.comment-placeholder {
+    margin-top: 30px;
+    font-style: italic;
+    color: #777;
+}

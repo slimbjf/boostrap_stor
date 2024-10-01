@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Shoes</title>
+    <link rel="icon" href="./photo-1579298245158-33e8f568f7d3.avif" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <!-- Bar de navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Luxe Shoes</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="#">Accueil</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Catégories</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Air Jordan</a></li>
+                                <li><a class="dropdown-item" href="#">Nike Air Max</a></li>
+                                <li><a class="dropdown-item" href="#"></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                    <!-- Shopping cart icon -->
+                    <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Panier</a>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="to research">
+                        <button class="btn btn-outline-success" type="submit">to research</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Section avec le Carousel -->
+    <main>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://i.pinimg.com/564x/51/94/24/5194242531e25c7da0fd68e54f00aab9.jpg" class="d-block w-100" alt="Nike Air Jordan Black">
+                    <div class="carousel-caption d-md-block Jordan">
+                      <div ><h5 class="airjordan">Air Jordan Noir</h5>
+                        <p>US$237 <span class="badge bg-success">-20%</span></p></div>
+                        <button class="btn btn-warning">Ajouter au panier</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.pinimg.com/564x/18/87/a3/1887a31d9a8e1e3d38b7f4a645a14c49.jpg" class="d-block w-100" alt="Nike Air Jordan Red">
+                    <div class="carousel-caption d-md-block">
+                        <h5 class="airjordan">Air Jordan Purple</h5>
+                        <p>US$237</p>
+                        <button class="btn btn-warning">Ajouter au panier</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.stockx.com/images/Air-Jordan-1-Retro-High-White-University-Blue-Black-Product.jpg" class="d-block w-100" alt="Nike Air Jordan Bleu">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Air Jordan Bleu</h5>
+                        <p>US$237</p>
+                        <button class="btn btn-warning">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+            </button>
+        </div>
+
+        <section id="comments" class="comments-section">
+            <div class="container">
+                <h2>Commentaires</h2>
+                <form class="comment-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" class="form-control" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Commentaire :</label>
+                        <textarea id="comment" class="form-control" rows="4" placeholder="Votre commentaire" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+        
+                <div class="comment-placeholder">
+                    <p>Aucun commentaire pour le moment. Soyez le premier à commenter !</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-content">
+            <p>Contact : contact@luxeshoes.com</p>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Scripts Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>
